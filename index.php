@@ -39,6 +39,18 @@
 					<p>We have been voted best car company in the UK by our employees 8 years running. <br/>Boyd's Used Motors has been running for over 13 years selling reliable used cars to the first person to walk in the door.</p>
 					
 					<p>We saw you coming and made a special price just for you! That's the quality service you can expect from our friendly staff.</p>
+                    
+                    <?php 
+                    $url = 'http://comp2203.ecs.soton.ac.uk/labs/lab3/api/location.php?location=3166';
+      				$json = file_get_contents($url);
+      				$data = json_decode($json);
+					//print_r($data);
+					?>
+                    
+                    
+                    <p> Name : <?php echo($data->name); ?> </p> 
+                    <p> country : <?php echo($data->country); ?> </p>
+					
 				</div>
 				
 				<!-- sidebar -->
