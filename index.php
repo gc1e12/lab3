@@ -1,22 +1,9 @@
+<?php include ("includes/navigations.php");?>
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Boyd's Used Motors</title>
-		
-		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-		<!--[if lt IE 9]>
-		<script src="../../assets/js/html5shiv.js"></script>
-		<script src="../../assets/js/respond.min.js"></script>
-		<![endif]-->
-		
-		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-		<link href="css/style.css" rel="stylesheet" media="screen">
-		
-		<script src="//code.jquery.com/jquery.js" type="text/javascript"></script>
-		<script src="js/bootstrap.min.js" type="text/javascript"></script>
-		<script src="js/script.js" type="text/javascript"></script>
-		
-	</head>
+
+	<?php include ("includes/headings.html")?>
+	
 	<body onLoad="startTimer()">
 		
 		<!-- container -->
@@ -28,7 +15,8 @@
 				<!-- title -->
 				<div class="row">
 					<div class="col-md-3 pull-left"><img src="img/banner-left.png"></div>
-					<div class="col-md-6"><h1>Boyd's Used Motors</h1></div>
+					<div class="col-md-6">
+					  <h1>Boyd's Used Motors</h1></div>
 					<div class="col-md-3 pull-right"><img src="img/banner-right.png"></div>
 				</div>
 				
@@ -36,16 +24,7 @@
 				<h2 id="motd">A name you can surely trust!</h2>
 				
 				<!-- navigation -->
-				<div class="row">
-					<div class="col-md-12">
-						<ul class="nav nav-tabs">
-							<li class="active"><a href="index.html">Home</a></li>
-							<li><a href="finances.html">Finances</a></li>
-							<li><a href="about.html">About</a></li>
-							<li><a href="contact.html">Contact Us</a></li>
-						</ul>
-					</div>
-				</div>
+				<?php echo(changeCurrentActivePage("index"));?>
 				
 			</div><!-- /header -->
 			
@@ -78,11 +57,7 @@
 			</div><!-- /main content -->
 			
 			
-			<!-- footer -->
-			<div id="footer" class="row">
-				<p class="col-md-offset-1 text-muted">Designed by Boyd's Artistic Design Company &copy; 2013</p>
-			</div><!-- /footer -->
-			
+			<?php include ("includes/footers.php")?>			
 			
 		</div><!-- /container -->
 					
